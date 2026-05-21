@@ -1,0 +1,20 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #080b11;
+  color: #e7edf7;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button {
+  font: inherit;
+}
