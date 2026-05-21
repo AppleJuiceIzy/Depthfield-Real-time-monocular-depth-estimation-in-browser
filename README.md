@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Browser Depth Visualizer
 
 Real-time browser-based depth visualization using **Depth Anything V2 Small (ONNX)** and **ONNX Runtime Web**.
@@ -61,6 +60,3 @@ npm run start
   - `Cross-Origin-Embedder-Policy: require-corp`
   - `Cross-Origin-Opener-Policy: same-origin`
 =======
-# Depthfield: Real-time monocular depth estimation in the browser 
-Single-camera real-time depth estimation in a browser. Feeds live webcam footage through Depth Anything V2 via ONNX Runtime Web - no server or LiDAR. The model infers per-pixel depth from monocular cues like occlusion and perspective, colorized live. The same primitive a robot uses to visually understand a 3D space before it can navigate it.
->>>>>>> 9fa494ec3b227e76f8506accb693cc8646d6a925
