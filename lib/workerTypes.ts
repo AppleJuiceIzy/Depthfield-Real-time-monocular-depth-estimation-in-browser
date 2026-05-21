@@ -27,5 +27,10 @@ export type DepthWorkerResponse =
       height: number;
       depth: Float32Array;
       inferenceMs: number;
+      depthMin: number;
+      depthMax: number;
+      depthMean: number;
+      inputTensorShape: [number, number, number, number];
+      outputTensorShape: [number, number, number];
     }
   | { type: "error"; message: string };

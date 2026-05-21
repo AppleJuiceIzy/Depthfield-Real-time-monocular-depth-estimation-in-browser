@@ -1,0 +1,39 @@
+/* [next]/internal/font/google/instrument_serif_acda1feb.module.css [app-client] (css) */
+@font-face {
+  font-family: Instrument Serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/ccf27e5a7366fb23-s.0hck6o0i8wq3a.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Instrument Serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/e41d5df559864f9e-s.p.0gq7fw9.sy_5..woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Instrument Serif Fallback;
+  src: local(Times New Roman);
+  ascent-override: 117.94%;
+  descent-override: 36.93%;
+  line-gap-override: 0.0%;
+  size-adjust: 83.94%;
+}
+
+.instrument_serif_acda1feb-module__tXlfYG__className {
+  font-family: Instrument Serif, Instrument Serif Fallback;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.instrument_serif_acda1feb-module__tXlfYG__variable {
+  --font-instrument-serif: "Instrument Serif", "Instrument Serif Fallback";
+}
+
+/*# sourceMappingURL=%5Bnext%5D_internal_font_google_instrument_serif_acda1feb_module_css_0w3-wzy._.single.css.map*/

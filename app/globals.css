@@ -1,5 +1,9 @@
 :root {
-  color-scheme: dark;
+  --paper: #f4efe6;
+  --ink: #1a1a1a;
+  --accent-blue: #3a5fff;
+  --accent-red: #c1432d;
+  --line: rgba(26, 26, 26, 0.15);
 }
 
 * {
@@ -10,11 +14,97 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: #080b11;
-  color: #e7edf7;
-  font-family: "Courier New", Courier, monospace;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-instrument-serif), Georgia, serif;
 }
 
 button {
   font: inherit;
+}
+
+.control-button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease, transform 120ms ease;
+}
+
+.control-button:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.control-button.active {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.control-button.active:hover {
+  background: var(--accent-blue);
+  color: var(--paper);
+  border-color: var(--accent-blue);
+}
+
+.canvas-panel {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fbf8f1;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.gesture-item {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: transform 140ms ease, opacity 140ms ease, color 140ms ease;
+}
+
+.gesture-item .emoji {
+  font-size: clamp(16px, 2.2vw, 22px);
+  opacity: 0.4;
+}
+
+.gesture-item .label {
+  font-size: clamp(9px, 1.2vw, 11px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.gesture-item.active {
+  transform: scale(1.1);
+}
+
+.gesture-item.active .emoji {
+  opacity: 1;
+}
+
+.gesture-item.active .label {
+  color: var(--accent-red);
+}
+
+.designed-by-izy {
+  color: #3a5fff;
+  text-decoration: none;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.designed-by-izy:hover {
+  color: #1e3fcc;
+  text-decoration: underline;
+  text-decoration-color: #1e3fcc;
 }

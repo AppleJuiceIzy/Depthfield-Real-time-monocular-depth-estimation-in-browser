@@ -1,0 +1,95 @@
+/* [project]/app/globals.css [app-client] (css) */
+:root {
+  --paper: #f4efe6;
+  --ink: #1a1a1a;
+  --accent-blue: #2a3f6f;
+  --accent-red: #c1432d;
+  --line: #1a1a1a26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+}
+
+.control-button {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  cursor: pointer;
+  letter-spacing: .03em;
+  background: none;
+  border-radius: 0;
+  padding: 8px 12px;
+  transition: background-color .14s, color .14s, border-color .14s, transform .12s;
+}
+
+.control-button:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.control-button.active {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.control-button.active:hover {
+  background: var(--accent-blue);
+  color: var(--paper);
+  border-color: var(--accent-blue);
+}
+
+.canvas-panel {
+  border: 1px solid var(--line);
+  background: #fbf8f1;
+  border-radius: 0;
+  box-shadow: 0 4px 24px #00000014;
+}
+
+.gesture-item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 80px;
+  transition: transform .14s, opacity .14s, color .14s;
+  display: flex;
+}
+
+.gesture-item .emoji {
+  opacity: .4;
+  font-size: 22px;
+}
+
+.gesture-item .label {
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-size: 11px;
+}
+
+.gesture-item.active {
+  transform: scale(1.1);
+}
+
+.gesture-item.active .emoji {
+  opacity: 1;
+}
+
+.gesture-item.active .label {
+  color: var(--accent-red);
+}
+
+/*# sourceMappingURL=app_globals_0jn8.0u.css.map*/

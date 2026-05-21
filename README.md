@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# Browser Depth Visualizer
+# Depthfield
 
-Real-time browser-based depth visualization using **Depth Anything V2 Small (ONNX)** and **ONNX Runtime Web**.
+Real-time monocular depth estimation in the browser **Depth Anything V2 Small (ONNX)** and **ONNX Runtime Web**.
 
 ## Features
 
