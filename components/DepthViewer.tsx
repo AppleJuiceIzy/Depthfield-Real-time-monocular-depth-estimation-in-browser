@@ -650,7 +650,7 @@ export function DepthViewer() {
                 letterSpacing: "0.01em",
               }}
             >
-              Depthfield
+              Depthfield by izy ali
             </h1>
             <p
               style={{

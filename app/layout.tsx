@@ -15,8 +15,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Browser Depth Visualizer",
-  description: "Real-time client-side depth map visualizer powered by ONNX Runtime Web.",
+  title: "Depthfield by izy ali",
+  description: "Real-time monocular depth estimation in the browser using ONNX Runtime Web.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

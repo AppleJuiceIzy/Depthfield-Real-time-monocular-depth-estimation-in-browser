@@ -4,7 +4,6 @@
 Real-time monocular depth estimation in the browser **Depth Anything V2 Small (ONNX)** and **ONNX Runtime Web**.
 
 ## Features
-how
 - Zero-backend architecture (all inference in-browser)
 - Webcam split view:
   - `RGB Input` (left)

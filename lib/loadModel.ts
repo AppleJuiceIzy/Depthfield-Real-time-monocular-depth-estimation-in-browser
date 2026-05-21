@@ -1,6 +1,7 @@
 import * as ort from "onnxruntime-web";
 
-import { MODEL_URL } from "@/lib/workerTypes";
+const MODEL_URL =
+  "https://github.com/AppleJuiceIzy/Depthfield-Real-time-monocular-depth-estimation-in-browser/releases/download/v1.0/depth-anything-v2-small.onnx";
 
 let sessionPromise: Promise<ort.InferenceSession> | null = null;
 

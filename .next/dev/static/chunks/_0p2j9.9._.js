@@ -1361,7 +1361,7 @@ function DepthViewer() {
                                         lineHeight: 1,
                                         letterSpacing: "0.01em"
                                     },
-                                    children: "Depthfield"
+                                    children: "Depthfield by Izyan Ali"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DepthViewer.tsx",
                                     lineNumber: 644,
