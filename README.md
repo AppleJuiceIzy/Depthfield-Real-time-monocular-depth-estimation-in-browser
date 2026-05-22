@@ -102,7 +102,7 @@ The model is served same-origin through the API route, so there are no CORS issu
 ## Tech stack
  
 - [Next.js](https://nextjs.org) + React + TypeScript
-- [ONNX Runtime Web](https://onnxruntime.ai/docs/tutorials/web/) — in-browser model inference
-- [Depth Anything V2 (Small)](https://huggingface.co/onnx-community/depth-anything-v2-small) — the depth model
-- [MediaPipe Tasks Vision](https://developers.google.com/mediapipe) — pose and hand landmark detection
+- [ONNX Runtime Web](https://onnxruntime.ai/docs/tutorials/web/) -in-browser model inference
+- [Depth Anything V2 (Small)](https://huggingface.co/onnx-community/depth-anything-v2-small) - the depth model
+- [MediaPipe Tasks Vision](https://developers.google.com/mediapipe) - pose and hand landmark detection
 - Web Workers, Canvas, `getUserMedia`
