@@ -1,8 +1,8 @@
-# Depthfield
+# Depthfield by izy ali
  
 Real-time monocular depth estimation in the browser, with pose and gesture tracking layered on top. Point your webcam at the page and it estimates per-pixel distance, tracks your body and hands, and recognizes gestures.
  
-**[Live demo →](https://youtu.be/HTbTCFRZhkM)** · _designed by [izy](https://www.izyanali.com/)_
+**[LIVE DEMO & TECHNICAL EXPLANATION →](https://youtu.be/HTbTCFRZhkM)** · _designed by [izy](https://www.izyanali.com/)_
 
 https://github.com/user-attachments/assets/efacb7d4-95a0-463c-9bf1-b4baf40e5444
  
