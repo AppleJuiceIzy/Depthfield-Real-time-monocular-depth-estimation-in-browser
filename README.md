@@ -12,7 +12,7 @@ Depthfield runs two computer vision models directly in the browser and fuses the
  
 - **Depth estimation** - a single webcam frame goes through Depth Anything V2 (Small) via ONNX Runtime Web, producing a per-pixel relative depth map. No stereo camera or depth sensor needed; the model infers distance from monocular cues like occlusion, perspective, and texture.
 - **Pose + hand tracking** - MediaPipe detects 33 body landmarks and 21 landmarks per hand, drawn as a live skeleton.
-- **Fusion** — each pose and hand landmark is annotated with the depth value sampled at its position, giving approximate 2.5D body keypoints from one camera.
+- **Fusion** - each pose and hand landmark is annotated with the depth value sampled at its position, giving approximate 2.5D body keypoints from one camera.
 - **Gesture recognition** - a rule-based classifier reads hand landmark geometry to recognize thumbs up, thumbs down, peace, pointing, fist, open palm, OK, and rock.
 Everything runs on your device. Frames never leave the browser.
 
@@ -76,10 +76,10 @@ Keeping inference in a worker is what lets the UI stay responsive while the mode
  
 A few things you can tweak:
  
-- **Model source** — the model is served through `app/api/model/route.ts`, which proxies a GitHub Release asset. Swap the `MODEL_URL` there to point at your own host.
-- **Inference resolution** — `DEPTH_INPUT_SIZE` in `lib/workerTypes.ts` controls the model input size. Lower is faster, higher is sharper.
-- **Colormaps** — add or edit colormap stops in `lib/colorize.ts`.
-- **Gestures** — tune thresholds or add new gestures in `lib/gestureClassifier.ts`.
+- **Model source** - the model is served through `app/api/model/route.ts`, which proxies a GitHub Release asset. Swap the `MODEL_URL` there to point at your own host.
+- **Inference resolution** - `DEPTH_INPUT_SIZE` in `lib/workerTypes.ts` controls the model input size. Lower is faster, higher is sharper.
+- **Colormaps** - add or edit colormap stops in `lib/colorize.ts`.
+- **Gestures** - tune thresholds or add new gestures in `lib/gestureClassifier.ts`.
 ## Deploying
  
 The project deploys to [Vercel](https://vercel.com) with no config changes:
