@@ -52,10 +52,8 @@ Open [http://localhost:3000](http://localhost:3000), allow camera access when pr
  
 The render loop captures webcam frames to a canvas. Each frame is sent to a Web Worker that runs the ONNX depth model off the main thread, while MediaPipe pose and hand detection run on the main thread in parallel. Results are fused at draw time and rendered to the depth canvas and overlay.
  
-```
-webcam → canvas → ┬→ Web Worker (ONNX depth) ─┐
-                  └→ MediaPipe (pose + hands) ─┴→ fuse → render
-```
+<img width="1046" height="259" alt="Screenshot 2026-05-21 at 7 42 45 PM" src="https://github.com/user-attachments/assets/9d6acb9e-5a44-4d85-a7dc-cf5dc9dec330" />
+
  
 Keeping inference in a worker is what lets the UI stay responsive while the model runs every frame.
 
