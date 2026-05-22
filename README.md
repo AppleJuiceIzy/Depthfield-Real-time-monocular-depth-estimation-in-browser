@@ -53,10 +53,10 @@ webcam → canvas → ┬→ Web Worker (ONNX depth) ─┐
 ```
  
 Keeping inference in a worker is what lets the UI stay responsive while the model runs every frame.
- 
+
 ## Project structure
  
-| Path | Responsibility |
+| Path | Purpose |
 |------|----------------|
 | `components/DepthViewer.tsx` | Webcam capture, render loop, UI, fusion, all the wiring |
 | `workers/depthWorker.ts` | Runs the ONNX session off the main thread |
