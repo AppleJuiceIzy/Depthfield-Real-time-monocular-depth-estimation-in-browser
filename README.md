@@ -1,6 +1,6 @@
 # Depthfield
  
-Real-time monocular depth estimation in the browser, with pose and gesture tracking layered on top. Point your webcam at the page and it estimates per-pixel distance, tracks your body and hands, and recognizes gestures — all client-side, no server, no LiDAR.
+Real-time monocular depth estimation in the browser, with pose and gesture tracking layered on top. Point your webcam at the page and it estimates per-pixel distance, tracks your body and hands, and recognizes gestures.
  
 **[Live demo →](https://youtu.be/HTbTCFRZhkM)** · _designed by [izy](https://www.izyanali.com/)_
 
@@ -10,10 +10,10 @@ https://github.com/user-attachments/assets/efacb7d4-95a0-463c-9bf1-b4baf40e5444
  
 Depthfield runs two computer vision models directly in the browser and fuses them:
  
-- **Depth estimation** — a single webcam frame goes through Depth Anything V2 (Small) via ONNX Runtime Web, producing a per-pixel relative depth map. No stereo camera or depth sensor needed; the model infers distance from monocular cues like occlusion, perspective, and texture.
-- **Pose + hand tracking** — MediaPipe detects 33 body landmarks and 21 landmarks per hand, drawn as a live skeleton.
+- **Depth estimation** - a single webcam frame goes through Depth Anything V2 (Small) via ONNX Runtime Web, producing a per-pixel relative depth map. No stereo camera or depth sensor needed; the model infers distance from monocular cues like occlusion, perspective, and texture.
+- **Pose + hand tracking** - MediaPipe detects 33 body landmarks and 21 landmarks per hand, drawn as a live skeleton.
 - **Fusion** — each pose and hand landmark is annotated with the depth value sampled at its position, giving approximate 2.5D body keypoints from one camera.
-- **Gesture recognition** — a rule-based classifier reads hand landmark geometry to recognize thumbs up, thumbs down, peace, pointing, fist, open palm, OK, and rock.
+- **Gesture recognition** - a rule-based classifier reads hand landmark geometry to recognize thumbs up, thumbs down, peace, pointing, fist, open palm, OK, and rock.
 Everything runs on your device. Frames never leave the browser.
 
 <img width="1455" height="906" alt="Screenshot 2026-05-21 at 6 56 05 PM" src="https://github.com/user-attachments/assets/54bc3491-be27-45e1-b8c9-f668af80d084" />
