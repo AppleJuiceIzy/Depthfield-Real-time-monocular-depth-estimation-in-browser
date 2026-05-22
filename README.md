@@ -15,6 +15,11 @@ Depthfield runs two computer vision models directly in the browser and fuses the
 - **Fusion** — each pose and hand landmark is annotated with the depth value sampled at its position, giving approximate 2.5D body keypoints from one camera.
 - **Gesture recognition** — a rule-based classifier reads hand landmark geometry to recognize thumbs up, thumbs down, peace, pointing, fist, open palm, OK, and rock.
 Everything runs on your device. Frames never leave the browser.
+
+<img width="1455" height="906" alt="Screenshot 2026-05-21 at 6 56 05 PM" src="https://github.com/user-attachments/assets/54bc3491-be27-45e1-b8c9-f668af80d084" />
+
+<img width="1455" height="906" alt="Screenshot 2026-05-21 at 6 55 36 PM" src="https://github.com/user-attachments/assets/6b58136f-b85d-421c-9ce6-eeb4f4080be7" />
+
  
 ## Table of Contents
  
