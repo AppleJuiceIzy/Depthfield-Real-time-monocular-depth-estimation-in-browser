@@ -91,13 +91,13 @@ The model is served same-origin through the API route, so there are no CORS issu
  
 ## Troubleshooting
  
-**Depth panel stays black / "failed to fetch"** — the model didn't load. Check the browser console. If you see a CORS error, the model host isn't serving cross-origin; route it through `app/api/model/route.ts` instead of fetching it directly.
+**Depth panel stays black / "failed to fetch"** - the model didn't load. Check the browser console. If you see a CORS error, the model host isn't serving cross-origin; route it through `app/api/model/route.ts` instead of fetching it directly.
  
-**Inference is slow** — the model falls back to single-threaded WASM when SharedArrayBuffer isn't available. Confirm `next.config.js` sets `Cross-Origin-Embedder-Policy: require-corp` and `Cross-Origin-Opener-Policy: same-origin`, and that your host preserves those headers.
+**Inference is slow** - the model falls back to single-threaded WASM when SharedArrayBuffer isn't available. Confirm `next.config.js` sets `Cross-Origin-Embedder-Policy: require-corp` and `Cross-Origin-Opener-Policy: same-origin`, and that your host preserves those headers.
  
-**Camera doesn't start** — camera access requires HTTPS (or localhost). Make sure you allowed the permission and no other app is holding the camera.
+**Camera doesn't start** - camera access requires HTTPS (or localhost). Make sure you allowed the permission and no other app is holding the camera.
  
-**Gestures are flaky** — lighting and hand angle matter. The classifier uses joint-angle geometry with temporal smoothing; tune the thresholds in `lib/gestureClassifier.ts` for your setup.
+**Gestures are flaky** - lighting and hand angle matter. The classifier uses joint-angle geometry with temporal smoothing; tune the thresholds in `lib/gestureClassifier.ts` for your setup.
  
 ## Tech stack
  
